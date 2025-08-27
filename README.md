@@ -1,6 +1,7 @@
 # Extended-Research-Project
 A repository of additional materials in support of an Extended Research Project submitted to the University of Manchester for a degree in MSc Data Science
 
+# Measuring Gender Equality in Greater Manchester: An Extension of the Gender Equality Index UK to MSOA Level<img width="468" height="70" alt="image" src="https://github.com/user-attachments/assets/443a2975-b120-41b2-9465-48fd355b3cc8" />
 
 # Project Abstract
 In this project, the methodology of the Gender Equality Index UK (Schmid et al., 2025) is extended from Local Authority District level down to Middle Super Output Area level in the Greater Manchester region. It builds on work which measures gender equality through a multi-dimensional index, generating new insight by offering a more granular unit of analysis. In the process, this work explores data availability at smaller geographies and considers the applicability of that data to the context of equality measurement. Further, the research evaluates existing techniques to generate small area estimates and develops a custom estimation procedure incorporating geographic boundaries with a Gaussian weighting function into a Boundary-Sensitive Neighbourhood Estimator. The success of these techniques is discussed, and the resulting indices computed to provide a uniquely granular insight into the topography of gender equality in Greater Manchester.
