@@ -11,9 +11,9 @@ from edited_imputer import assign_weights
 
 #A script to conduct a sensitivity analysis of the estimation procedure in the not low pay indicator
 
-neighbours = pd.read_csv(r'C:/Users/b60091cu/OneDrive - The University of Manchester/Lookup Files/MSOA_neighbours_100.csv')
-women_emp = pd.read_csv(r'C:\Users\b60091cu\OneDrive - The University of Manchester\Lookup Files\women_emp.csv')
-MSOA_GM_only = pd.read_csv(r'C:\Users\b60091cu\OneDrive - The University of Manchester\Lookup Files\GM_LA_MSOA_lookup.csv')
+neighbours = pd.read_csv('MSOA_neighbours_100.csv')
+women_emp = pd.read_csv('women_emp.csv')
+MSOA_GM_only = pd.read_csv('GM_LA_MSOA_lookup.csv')
 
 #Setting a grid of values for k between 0 and 5
 param_grid = list(np.linspace(0,5, num=11))
@@ -46,3 +46,4 @@ for const in param_grid:
 #Not low pay variance for women is approximately 0.017 so again 1 seems an appropriate choice
 #Export variances to csv
 variances.to_csv('us_grid_search.csv')
+
