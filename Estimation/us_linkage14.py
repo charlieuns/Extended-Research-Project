@@ -12,11 +12,11 @@ from index_functions import computing_measures
 
 #A script to apply the estimation procedure to the Understanding Society wave 14 data
 
-response = pd.read_csv(r"C:\Users\b60091cu\OneDrive - The University of Manchester\Desktop\n_indresp.tab",
+response = pd.read_csv("n_indresp.tab",
                        sep='\t')
-LSOA = pd.read_csv(r"C:\Users\b60091cu\OneDrive - The University of Manchester\Desktop\n_lsoa21_protect.tab",
+LSOA = pd.read_csv("n_lsoa21_protect.tab",
                    sep='\t')
-MSOA_LSOA_lookup = pd.read_csv(r"C:\Users\b60091cu\OneDrive - The University of Manchester\Lookup Files\MSOA_LSOA_lookup.csv")
+MSOA_LSOA_lookup = pd.read_csv("MSOA_LSOA_lookup.csv")
 
 #Linking from LSOAs to MSOAs
 LSOA['LSOA21CD'] = LSOA['n_lsoa21'].str.replace('S','E')
@@ -33,7 +33,7 @@ df = df[variables]
 df.to_csv('us14df.csv')
 
 #Joining to pre-computed neighbours, available in this repository
-neighbours = pd.read_csv(r'C:/Users/b60091cu/OneDrive - The University of Manchester/Lookup Files/MSOA_neighbours_100.csv')
+neighbours = pd.read_csv('MSOA_neighbours_100.csv')
 
 us14_dist = neighbours.merge(df, left_on='MSOA21CD_dest', right_on='MSOA21CD')
 
@@ -136,4 +136,5 @@ computing_measures(imputed_dl, 'Women', 'Men', 'dom_lab')
 imputed_inc.to_csv('inc_computed.csv')
 imputed_lp.to_csv('lp_computed.csv')
 imputed_dl.to_csv('dl_computed.csv')
+
 
