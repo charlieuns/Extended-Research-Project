@@ -1,0 +1,20 @@
+Domain,Sub-Domain,Original Indicator,Source,Granularity
+Paid Work,Employment,% in employment,Census,MSOA
+,,"% in managerial, administrative and professional occupations",Census,MSOA
+,Quality of work,% with one or more professional development or training opportunities in last 12 months,GMRS,MSOA (Imputed)
+,,% agree that their job makes good use of their skills,GMRS,MSOA (Imputed)
+Unpaid Work,Care and domestic work,% not considered an unpaid carer,Census,MSOA
+,,Weekly time on housework,Understanding Society,MSOA
+Money,Pay,Gross monthly labour income,Understanding Society,MSOA
+,,Computed from gross monthly labour income (% earning >2/3 of the median),Understanding Society,MSOA
+,Home equity,% in owner-occupied accommodation,Census,MSOA
+Power and Participation,Leadership,% of ltd companies majority led by men or women,The Gender Index,LAD
+,,% of councillors who are men or women,Open Council Data,LAD
+,Participation,"% in political, environmental, religious or social organisations",Understanding Society,MSOA
+,,% eligible voters who voted in election,Understanding Society,MSOA
+Education,Qualifications,% with degree qualification or above,Census,MSOA
+,Numeracy and literacy,% with grade 5+/c+ in English and Maths GCSE,Department for Education England,MSOA
+,,,,MSOA
+Health,Life expectancy and health,Life expectancy at birth,ONS Estimates (Census derived),LAD
+,,% not disabled under the Equality Act,Census,MSOA
+,,% with good perceived health,Census,MSOA
