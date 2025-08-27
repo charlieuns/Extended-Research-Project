@@ -3,19 +3,19 @@ from index_functions import computing_measures
 
 #A script to take census datasets, manipulate and compute the indices from them
 #All data are available at: https://www.ons.gov.uk/datasets/create
-employment_raw = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/Census_datasets/economic_activity_age.csv')
+employment_raw = pd.read_csv('economic_activity_age.csv')
 
-occupation_raw = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/Census_datasets/occupational_status_age.csv')
+occupation_raw = pd.read_csv('occupational_status_age.csv')
 
-disability = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/Census_datasets/disability.csv')
+disability = pd.read_csv('disability.csv')
 
-unpaid_care = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/Census_datasets/unpaid_care.csv')
+unpaid_care = pd.read_csv('unpaid_care.csv')
 
-qualification = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/Census_datasets/highest_qualification.csv')
+qualification = pd.read_csv('highest_qualification.csv')
 
-home_equity = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/Census_datasets/home_equity.csv')
+home_equity = pd.read_csv('home_equity.csv')
 
-general_health = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/Census_datasets/general_health.csv')
+general_health = pd.read_csv('general_health.csv')
 
 GM_lookup = pd.read_csv('GM_LA_MSOA_lookup.csv')
 GM_MSOAs = GM_lookup['MSOA21CD'].tolist()
