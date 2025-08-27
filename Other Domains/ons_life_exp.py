@@ -10,7 +10,7 @@ import pandas as pd
 from index_functions import computing_measures
 
 #Data available at: https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/datasets/lifeexpectancyforlocalareasofgreatbritain
-ons_life_expectancy = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/ons_life_expectancy.csv')
+ons_life_expectancy = pd.read_csv('ons_life_expectancy.csv')
 
 lookup = pd.read_csv('GM_LA_MSOA_lookup.csv')
 
