@@ -11,7 +11,7 @@ from index_functions import computing_measures
 #A script to take the names of councillors, estimate their gender and compute the indicator measure from that
 
 #This file is available at: https://opencouncildata.co.uk/productsAndDownloads.php
-councillor_names = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/opencouncildata_councillors.csv')
+councillor_names = pd.read_csv('opencouncildata_councillors.csv')
 
 GM_LAs = list(('Bolton', 
               'Bury',
@@ -32,7 +32,7 @@ GM_councillors.to_csv('GM_councillors.csv')
 #Used Namsor online API to apply morphological analysis of names
 #tool available at: https://namsor.app/csv-excel-tool/
 #This replicates exactly the proocess used by Schmid et al. (2025)
-GM_councillors_w_predictions = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/namsor_genderize-full-name_GM_councillors.csv')
+GM_councillors_w_predictions = pd.read_csv('namsor_genderize-full-name_GM_councillors.csv')
 gender_dummies = pd.get_dummies(GM_councillors_w_predictions['likelyGender'])
 
 GM_w_gender = GM_councillors.reset_index(names='ID')
