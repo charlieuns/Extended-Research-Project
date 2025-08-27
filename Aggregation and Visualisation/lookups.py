@@ -6,7 +6,7 @@ from shapely.geometry import Polygon, LineString, Point
 #and compute distances for use in the estimation procedure
 
 #MSOA to LA lookups, available at: https://www.data.gov.uk/dataset/da36cac8-51c4-4d68-a4a9-37ac47d2a4ba/msoa-2011-to-msoa-2021-to-local-authority-district-2022-exact-fit-lookup-for-ew-v2
-MSOA_lookup = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/MSOA_lookup.csv')
+MSOA_lookup = pd.read_csv('MSOA_lookup.csv')
 
 GM_LAs = list(('Bolton', 
               'Bury',
@@ -41,7 +41,7 @@ MSOA_GM_only = MSOA_GM[MSOA_GM['GM'] == True]
 
 
 #Loading the shapefiles, available at: https://geoportal.statistics.gov.uk/datasets/ons::middle-layer-super-output-areas-december-2021-boundaries-ew-bgc-v3-2/about
-filepath = '/Users/charlieunsworth/Documents/Python Directories/ERP/Middle_layer_Super_Output_Areas_December_2021_Boundaries_EW_BSC_V3_-3382097907403187870/MSOA_2021_EW_BSC_V3.shp'
+filepath = 'Middle_layer_Super_Output_Areas_December_2021_Boundaries_EW_BSC_V3_-3382097907403187870/MSOA_2021_EW_BSC_V3.shp'
 
 shape_data = gpd.read_file(filepath)
 
@@ -58,7 +58,7 @@ GM_only_shapes.plot()
 
 
 #LSOA 2021 to MSOA 2021 lookups, available at: https://geoportal.statistics.gov.uk/datasets/b9ca90c10aaa4b8d9791e9859a38ca67_0/explore
-MSOA_LSOA_lookup = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/Output_Area_to_Lower_layer_Super_Output_Area_to_Middle_layer_Super_Output_Area_to_Local_Authority_District_(December_2021)_Lookup_in_England_and_Wales_v3.csv')
+MSOA_LSOA_lookup = pd.read_csv('Output_Area_to_Lower_layer_Super_Output_Area_to_Middle_layer_Super_Output_Area_to_Local_Authority_District_(December_2021)_Lookup_in_England_and_Wales_v3.csv')
 
 #Getting co-ordinates and computing distances between MSOAs by joining and rejoining DataFrames
 cross_join = pd.merge(MSOA_GM['MSOA21CD'], MSOA_GM['MSOA21CD'], how='cross', suffixes=('_origin','_dest'))
