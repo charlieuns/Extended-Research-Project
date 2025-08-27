@@ -14,9 +14,9 @@ from index_functions import computing_measures
 #compute the index values for the Education domain
 
 #Data available at: https://explore-education-statistics.service.gov.uk/find-statistics/key-stage-4-performance/2023-24
-performance_national = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/202324_performance_tables_schools_final.csv')
+performance_national = pd.read_csv('202324_performance_tables_schools_final.csv')
 #Data available at: https://get-information-schools.service.gov.uk/Search
-MSOA_df_school = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/schools_MSOA.csv')
+MSOA_df_school = pd.read_csv('schools_MSOA.csv')
 
 #Restricting to just the sex-disaggregated data
 performance_by_sex = performance_national[performance_national['breakdown_topic']=='Sex']
