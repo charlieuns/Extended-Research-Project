@@ -10,7 +10,7 @@ import pandas as pd
 from index_functions import computing_measures
 
 #Data available from: https://www.thegenderindex.co.uk/explore
-companies_df = pd.read_csv('/Users/charlieunsworth/Documents/Python Directories/ERP/gender_index.csv')
+companies_df = pd.read_csv('gender_index.csv')
 
 #Cleaning the % symbols
 for i in range(len(companies_df)):
