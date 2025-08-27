@@ -16,7 +16,7 @@ MSOA = pd.DataFrame()
 MSOA['MSOA'] = MSOA_df['MSOA21CD']
 
 #Reading in the shape data, available at: https://geoportal.statistics.gov.uk/datasets/ons::middle-layer-super-output-areas-december-2021-boundaries-ew-bgc-v3-2/about
-filepath = '/Users/charlieunsworth/Documents/Python Directories/ERP/Middle_layer_Super_Output_Areas_December_2021_Boundaries_EW_BSC_V3_-3382097907403187870/MSOA_2021_EW_BSC_V3.shp'
+filepath = 'Middle_layer_Super_Output_Areas_December_2021_Boundaries_EW_BSC_V3_-3382097907403187870/MSOA_2021_EW_BSC_V3.shp'
 
 shape_data = gpd.read_file(filepath)
 
