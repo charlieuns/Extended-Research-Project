@@ -1,1 +1,18 @@
-[estimator details here]
+
+Estimation was applied to the Education, Care and Domestic Work and Pay sub-domains
+
+‘Boundary-Sensitive Neighbourhood Estimator’ algorithm details:
+- Distances between all MSOAs were computed from ONS shapefiles as well as a dummy variable for membership of the same Local Authority
+- A dataset was created of the N nearest-neighbour MSOAs for each MSOA in the GM region. N was chosen as 100 for the Understanding Society data and 50 for the Department for Education data to reflect the respective sample sizes. MSOAs from outside GM were allowed to be included as neighbours as both data sources were national.
+- The values for the indicator being estimated were linked to the nearest neighbour dataset.
+- For each MSOA estimated:
+    - The subset of neighbours was selected from the full dataset.
+    - The standard deviation of distances was computed, and the standard deviation of the Gaussian kernel set to this value multiplied by a constant K (see Appendix 3 of the report).
+    - The distances were used to compute the corresponding value of the Gaussian probability density function, giving unnormalised weights.
+    - Where MSOAs were not in the same LA, the unnormalised weights were multiplied by 0.9 as part of the blocking step.
+    - All weights were then normalised to sum to 1.
+    - Indicator values were multiplied by the normalised weights, with the sum giving the final estimated value.
+
+Underpinning this algorithm are:
+- A regression analysis, where the relationship between distance, belonging to the same Local Authority District and difference in measures is assessed for Education and Not in Low Pay sub-domains, see Regression
+- A sensitivity analysis with grid search to determine an appropriate choice of constant k for the Gaussian kernel step, see Grid Search
