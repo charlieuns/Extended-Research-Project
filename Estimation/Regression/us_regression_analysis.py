@@ -12,7 +12,7 @@ import statsmodels.api as sm
 #A script to explore the spatial variations in correlations between MSOAs
 #See also: edu_regression_analysis
 
-MSOA_dist = pd.read_csv(r"C:\Users\b60091cu\OneDrive - The University of Manchester\Lookup Files\MSOA_dist.csv")
+MSOA_dist = pd.read_csv("MSOA_dist.csv")
 us14df = pd.read_csv('us14df.csv')
 
 #Filtering the full dataset to just employees and averaging to MSOA
@@ -38,3 +38,4 @@ emp_distance_reg = emp_distance_mod.fit()
 #Saving the results, see the Appendix to the report
 print(emp_distance_reg.summary())
 emp_distance_reg.save('emp_reg.pickle')
+
