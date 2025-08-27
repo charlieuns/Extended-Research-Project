@@ -1,8 +1,8 @@
 Domain,Sub-Domain,Original Indicator,Source,Granularity
 Paid Work,Employment,% in employment,Census,MSOA
 ,,"% in managerial, administrative and professional occupations",Census,MSOA
-,Quality of work,% with one or more professional development or training opportunities in last 12 months,GMRS,MSOA (Imputed)
-,,% agree that their job makes good use of their skills,GMRS,MSOA (Imputed)
+,Quality of work,% with one or more professional development or training opportunities in last 12 months,GMRS,LAD
+,,% agree that their job makes good use of their skills,GMRS,LAD
 Unpaid Work,Care and domestic work,% not considered an unpaid carer,Census,MSOA
 ,,Weekly time on housework,Understanding Society,MSOA
 Money,Pay,Gross monthly labour income,Understanding Society,MSOA
@@ -18,3 +18,4 @@ Education,Qualifications,% with degree qualification or above,Census,MSOA
 Health,Life expectancy and health,Life expectancy at birth,ONS Estimates (Census derived),LAD
 ,,% not disabled under the Equality Act,Census,MSOA
 ,,% with good perceived health,Census,MSOA
+
