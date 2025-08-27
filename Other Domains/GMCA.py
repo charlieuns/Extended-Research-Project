@@ -5,10 +5,10 @@ from index_functions import computing_measures
 #A script to take in data from the GM residents' survey and compute the indicator measures from it
 
 #These files are not open licence and so couldn't be made publically available in this repository
-opp_by_IMD = pd.read_csv("/Users/charlieunsworth/Documents/Python Directories/ERP/GMCA_csv/opp_by_IMD.csv")
-good_use_by_IMD = pd.read_csv("/Users/charlieunsworth/Documents/Python Directories/ERP/GMCA_csv/good_use_by_IMD.csv")
-good_use_by_LA = pd.read_csv("/Users/charlieunsworth/Documents/Python Directories/ERP/GMCA_csv/good_use_by_LA.csv")
-opp_by_LA = pd.read_csv("/Users/charlieunsworth/Documents/Python Directories/ERP/GMCA_csv/opp_by_LA.csv")
+opp_by_IMD = pd.read_csv("opp_by_IMD.csv")
+good_use_by_IMD = pd.read_csv("good_use_by_IMD.csv")
+good_use_by_LA = pd.read_csv("good_use_by_LA.csv")
+opp_by_LA = pd.read_csv("opp_by_LA.csv")
 
 GM_LAs = list(('Bolton', 
               'Bury',
