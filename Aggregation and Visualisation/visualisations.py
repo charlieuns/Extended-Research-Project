@@ -65,8 +65,10 @@ for i in domains:
     plt.savefig(file_name)
 
 
-
-
-
+#Example figure for repository
+ax = shapes_subd.plot(column='g_overall', legend=True, vmin=0.76, vmax=0.89)
+ax.set_axis_off()
+plt.figtext(0.5, 0.01, 'Example Figure: Overall Equality Measure by MSOA', horizontalalignment='center')
+plt.savefig('example_fig.png')
 
 
